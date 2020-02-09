@@ -1,0 +1,129 @@
+/* ここから下に記載していく */
+@charset "utf-8";
+
+/* --------------------------- 共通ブロック ---------------------------- */
+/* 全タブに対して適用 */
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN,
+    "メイリオ", Meiryo, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+}
+
+/* スタートボタン -----------------------------------------------------*/
+.start {
+  font-size: 50px;
+  font-weight: bold;
+  border: solid 2px gray;
+  display: inline;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 掛声テキスト部分 -----------------------------------------------------*/
+/* 最初はグー */
+.signal__txt1 {
+  opacity: 1;
+  font-size: 100px;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+/* ジャンケン */
+.signal__txt2 {
+  opacity: 1;
+  font-size: 100px;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+/* あいこで */
+.signal__txt3 {
+  opacity: 1;
+  font-size: 100px;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+/* ------------------------ アイコン画像部分 -------------------- */
+.input__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  opacity: 0;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.rock {
+  top: 0;
+  transform: translate(100px, 0);
+  transition: 1s;
+}
+
+.scissors {
+  position: relative;
+  top: -350px;
+  transform: translate(0, 100px);
+  transition: 1s;
+}
+
+.paper {
+  top: 0;
+  transform: translate(-100px, 0);
+  transition: 1s;
+}
+
+/* ------------------------ カウントダウン部分 -------------------- */
+.count__txt3 {
+  opacity: 1;
+  font-size: 200px;
+  display: none;
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+.count__txt2 {
+  opacity: 1;
+  font-size: 200px;
+  display: none;
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+.count__txt1 {
+  opacity: 1;
+  font-size: 200px;
+  display: none;
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}

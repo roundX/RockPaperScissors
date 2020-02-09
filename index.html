@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ジャンケン、ポン！</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header"></header>
+    <main class="main">
+      <div class="signal__wrapper">
+        <!-- <button class="start" id="start">ジャンケンスタート！</button> -->
+        <h1 class="signal__txt1">最初はグー！</h1>
+        <h1 class="signal__txt2">ジャンケン</h1>
+        <h1 class="signal__txt3">あいこで</h1>
+      </div>
+      <div class="input__wrapper">
+        <ul class="input__list">
+          <li class="input__list-item">
+            <button class="btn rock" id="1">
+              <img src="img/rock.jpeg" />
+            </button>
+          </li>
+          <li class="input__list-item">
+            <button class="btn scissors" id="2">
+              <img src="img/scissors.jpeg" />
+            </button>
+          </li>
+          <li class="input__list-item">
+            <button class="btn paper" id="3">
+              <img src="img/paper.jpeg" />
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="count__wrapper">
+        <h2 class="count__txt3">3</h2>
+        <h2 class="count__txt2">2</h2>
+        <h2 class="count__txt1">1</h2>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="js/RPS.js"></script>
+    </main>
+    <footer></footer>
+  </body>
+</html>
